@@ -1,24 +1,8 @@
-# README
+# KIEETA（キエータ）
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# サービス概要
+普段なかなか触れることのない指名手配犯の情報を周知することで、
+犯人の情報の収集、逮捕を目指し、治安を守るサービスです。
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# メインユーザー
+SNSを駆使する善良なる日本国民の皆様
