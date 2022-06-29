@@ -8,28 +8,13 @@
                                'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application',
                                'data-turbolinks-track': 'reload' %>
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
-      </script>
-    <![endif]-->
+    <%= render 'shared/shim' %>
   </head>
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "sample app", '#', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "top",   '#' %></li>
-            <li><%= link_to "利用規約",   '#' %></li>
-            <li><%= link_to "プライバシーポリシー", '#' %></li>
-            <li><%= link_to "お問い合わせ",   '#' %></li>
-            <li><%= link_to "指名手配犯一覧",   '#' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <%= render 'shared/header' %>
     <div class="container">
       <%= yield %>
+      <%= render 'shared/footer' %>
     </div>
   </body>
 </html>
