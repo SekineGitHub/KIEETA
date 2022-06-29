@@ -2,6 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@font-face {
+  font-family: 'Kaisotai';
+  src: url('../fonts/Kaisotai-Next-UP-B.ttf') format('truetype');
+  src: url('../fonts/Kaisotai-Next-UP-B.otf') format('opentype');
+  
+  font-family: 'Shinonome';
+  src: url('../fonts/JF-Dot-Shinonome14.ttf') format('truetype');
+  
+  font-family: 'ShinonomeB';
+  src: url('../fonts/JF-Dot-Shinonome14B.ttf') format('truetype');
+}
+
+
 body {
   background-color: black;
   color: white;
@@ -16,31 +29,27 @@ body {
 
 
 
+
 .container_header {
   text-align: right;
   margin-right: 30px;
 }
 
-@font-face {
-  font-family: 'Kaisotai';
-  src: url('../fonts/Kaisotai-Next-UP-B.ttf') format('truetype');
-  src: url('../fonts/Kaisotai-Next-UP-B.otf') format('opentype');
-  
-  font-family: 'Shinonome';
-  src: url('../fonts/JF-Dot-Shinonome14.ttf') format('truetype');
-  
-  font-family: 'ShinonomeB';
-  src: url('../fonts/JF-Dot-Shinonome14B.ttf') format('truetype');
-}
 
 
-.link_o {
-  color: #BE6D1C;
+
+.orrange_btn {
+  color: #FF7F27;
   text-decoration: none;
-  padding: 5px;
-  border-width: thick;
+  padding: 3px 8px 3px 4px;
+  border-width: 2px;
   border-style: solid;
   font-family: 'Kaisotai';
-  font-size: 25px;
+  font-size: 35px;
+  letter-spacing : -4px;
+}
+
+.orrange_btn:hover {
+  color: #FFFF00;
 }
 
