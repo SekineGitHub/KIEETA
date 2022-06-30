@@ -7,10 +7,6 @@
   src: url('../fonts/kaiso_after.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'shinonome';
-  src: url('../fonts/JF-Dot-Shinonome14.ttf') format('truetype');
-}
 
 
 
@@ -20,28 +16,40 @@ body {
   color: white;
 }
 
+
+
+
+// ロゴとEnter
+
 .top {
   text-align:  center;
   margin-top: 240px;
+  h1 {
+    transition: .3s;
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
 }
 
 .top_enter {
-  font-family: "shinonome";
+  font-family: monospace;
   text-decoration: none;
   color: white;
+  font-size: 36px;
 }
 
 
 
 
+
+
+// 指名手配ボタン
 
 .container_header {
   text-align: right;
   margin-right: 30px;
 }
-
-
-
 
 .orrange_btn {
   color: #FF7F27;
@@ -52,9 +60,61 @@ body {
   font-family: "kaisotai";
   font-size: 35px;
   letter-spacing : -4px;
+  &:hover {
+    color: #FFFF00;
+  }
 }
 
-.orrange_btn:hover {
-  color: #FFFF00;
+
+
+
+// footer(利用規約、プライバシーポリシー、お問い合わせ)
+
+ul {
+  list-style: none;
+  display: flex;
+	justify-content: center;
+	margin:0;
+	padding: 0;
 }
 
+
+.footer {
+  background-color: #383838;
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+}
+
+.footer01 {
+  text-decoration: none;
+  color: #878787;
+  opacity: 0.9;
+  margin: 10px;
+  font-family: monospace;
+  font-size: 16px;
+  &:hover {
+    color:white;
+  }
+}
+
+nav {
+  margin: 20px 0 20px 0;
+}
+
+
+
+// ここからスマホ　U^ェ^U
+
+@media screen and (max-width:480px) {
+  .logo_s {
+    width: 300px;
+  }
+  .top {
+    margin-top: 200px;
+  }
+  .footer01 {
+    font-size: 14px;
+  }
+}
