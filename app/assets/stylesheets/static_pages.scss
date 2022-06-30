@@ -3,16 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @font-face {
-  font-family: 'Kaisotai';
-  src: url('../fonts/Kaisotai-Next-UP-B.ttf') format('truetype');
-  src: url('../fonts/Kaisotai-Next-UP-B.otf') format('opentype');
-  
-  font-family: 'Shinonome';
-  src: url('../fonts/JF-Dot-Shinonome14.ttf') format('truetype');
-  
-  font-family: 'ShinonomeB';
-  src: url('../fonts/JF-Dot-Shinonome14B.ttf') format('truetype');
+  font-family: 'kaisotai';
+  src: url('../fonts/kaiso_after.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'shinonome';
+  src: url('../fonts/JF-Dot-Shinonome14.ttf') format('truetype');
+}
+
+
 
 
 body {
@@ -22,9 +22,14 @@ body {
 
 .top {
   text-align:  center;
-  margin-top: 250px;
+  margin-top: 240px;
 }
 
+.top_enter {
+  font-family: "shinonome";
+  text-decoration: none;
+  color: white;
+}
 
 
 
@@ -44,7 +49,7 @@ body {
   padding: 3px 8px 3px 4px;
   border-width: 2px;
   border-style: solid;
-  font-family: 'Kaisotai';
+  font-family: "kaisotai";
   font-size: 35px;
   letter-spacing : -4px;
 }
