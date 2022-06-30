@@ -2,14 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 @font-face {
   font-family: 'kaisotai';
-  src: url('../fonts/kaiso_after.ttf') format('truetype');
+  src: url('../fonts/kaiso_after.woff') format('woff');
 }
-
-
-
-
 
 body {
   background-color: black;
@@ -100,8 +97,9 @@ ul {
 }
 
 nav {
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
 }
+
 
 
 
