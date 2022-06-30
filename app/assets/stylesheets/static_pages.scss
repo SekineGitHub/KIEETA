@@ -1,3 +1,60 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@font-face {
+  font-family: 'kaisotai';
+  src: url('../fonts/kaiso_after.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'shinonome';
+  src: url('../fonts/JF-Dot-Shinonome14.ttf') format('truetype');
+}
+
+
+
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.top {
+  text-align:  center;
+  margin-top: 240px;
+}
+
+.top_enter {
+  font-family: "shinonome";
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+.container_header {
+  text-align: right;
+  margin-right: 30px;
+}
+
+
+
+
+.orrange_btn {
+  color: #FF7F27;
+  text-decoration: none;
+  padding: 3px 8px 3px 4px;
+  border-width: 2px;
+  border-style: solid;
+  font-family: "kaisotai";
+  font-size: 35px;
+  letter-spacing : -4px;
+}
+
+.orrange_btn:hover {
+  color: #FFFF00;
+}
+
