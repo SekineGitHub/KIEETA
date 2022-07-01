@@ -135,15 +135,23 @@ footer {
 // ここからスマホ　U^ェ^U
 
 @media screen and (max-width: 540px) {
+  
+  //KIEETAのロゴ画像
   .logo_s {
     width: 300px;
   }
+  
+  // ロゴとヘッダーの距離調整
   .top {
     margin-top: 195px;
   }
+  
+  // フッターの文字を小さくした
   footer .footer01 {
     font-size: 14px;
   }
+  
+  // 利用規約のサイズ調整
   .terms_of_use {
     margin: 10px;
     padding: 0 5px 5px 10px;
