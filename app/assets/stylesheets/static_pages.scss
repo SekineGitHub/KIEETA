@@ -2,51 +2,28 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 @font-face {
   font-family: 'kaisotai';
-  src: url('../fonts/kaiso_after.ttf') format('truetype');
+  src: url('../fonts/kaiso_after.woff') format('woff');
 }
-
-
-
-
 
 body {
   background-color: black;
   color: white;
-}
-
-
-
-
-// ロゴとEnter
-
-.top {
-  text-align:  center;
-  margin-top: 240px;
-  h1 {
-    transition: .3s;
-    &:hover {
-      transform: translateY(-4px);
-    }
+  #wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 }
 
-.top_enter {
-  font-family: monospace;
-  text-decoration: none;
-  color: white;
-  font-size: 36px;
-}
 
 
 
+// ヘッダー（指名手配ボタン）
 
-
-
-// 指名手配ボタン
-
-.container_header {
+.container_header01 {
   text-align: right;
   margin-right: 30px;
 }
@@ -68,6 +45,46 @@ body {
 
 
 
+//ヘッダー（KIEETAロゴあり）
+
+.container_header02 {
+  text-align: left;
+  margin-left: 20px;
+  padding-top: 12px;
+}
+
+.header_with_logo {
+  background-color: #383838;
+  height: 60px;
+}
+
+
+
+
+// ロゴとEnter
+
+.top {
+  text-align:  center;
+  margin-top: 240px;
+  margin-bottom: 222px;
+  h1 {
+    transition: .3s;
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+}
+
+.top_enter {
+  font-family: monospace;
+  text-decoration: none;
+  color: white;
+  font-size: 36px;
+}
+
+
+
+
 // footer(利用規約、プライバシーポリシー、お問い合わせ)
 
 ul {
@@ -78,43 +95,65 @@ ul {
 	padding: 0;
 }
 
-
-.footer {
+footer {
   background-color: #383838;
-  position: fixed;
-  bottom: 0;
+  margin-top: auto;
   height: 60px;
   width: 100%;
-}
-
-.footer01 {
-  text-decoration: none;
-  color: #878787;
-  opacity: 0.9;
-  margin: 10px;
-  font-family: monospace;
-  font-size: 16px;
-  &:hover {
+  .footer01 {
+    text-decoration: none;
+    color: #878787;
+    opacity: 0.9;
+    margin: 10px;
+    font-family: monospace;
+    font-size: 16px;
+    &:hover {
     color:white;
+    }
+  }
+  nav {
+    padding: 20px 0;
   }
 }
 
-nav {
-  margin: 20px 0 20px 0;
+
+// 利用規約
+
+.terms_of_use {
+  margin: 30px 80px 50px 80px;
+  padding: 0 30px 16px 30px;
+  border-width: 3px;
+  border-style: solid;
+  .title {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
 }
 
 
 
 // ここからスマホ　U^ェ^U
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 540px) {
+  
+  //KIEETAのロゴ画像
   .logo_s {
     width: 300px;
   }
+  
+  // ロゴとヘッダーの距離調整
   .top {
-    margin-top: 200px;
+    margin-top: 195px;
   }
-  .footer01 {
+  
+  // フッターの文字を小さくした
+  footer .footer01 {
     font-size: 14px;
+  }
+  
+  // 利用規約のサイズ調整
+  .terms_of_use {
+    margin: 10px;
+    padding: 0 5px 5px 10px;
   }
 }
