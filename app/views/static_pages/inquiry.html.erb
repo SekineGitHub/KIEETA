@@ -7,7 +7,10 @@
     <p>KIEETA（キエータ）をご利用頂きありがとうございます。</p>
     <p>本サービス内において、ご意見, ご要望, バグ報告等ございましたら下記TwitterアカウントのDMにてご報告頂けると助かります。</p>
   <div class="twitter_btn">
-    <%= link_to "@testtest", "https://twitter.com/10whatdoyoumean", target: :_blank, rel: "noopener noreferrer", class: "twitter link_to" %>
+    <%= link_to "https://twitter.com/10whatdoyoumean", target: :_blank, rel: "noopener noreferrer", class: "twitter link_to" do %>
+    <span class="fa fa-twitter"></span>
+    <span>@testtest</span>
+    <% end %>
   </div>
 </div>
 
