@@ -18,6 +18,10 @@ body {
   }
 }
 
+.link_to {
+  text-decoration: none;
+}
+
 
 
 
@@ -30,7 +34,6 @@ body {
 
 .orrange_btn {
   color: #FF7F27;
-  text-decoration: none;
   padding: 3px 8px 3px 4px;
   border-width: 2px;
   border-style: solid;
@@ -77,7 +80,6 @@ body {
 
 .top_enter {
   font-family: monospace;
-  text-decoration: none;
   color: white;
   font-size: 36px;
 }
@@ -101,7 +103,6 @@ footer {
   height: 60px;
   width: 100%;
   .footer01 {
-    text-decoration: none;
     color: #878787;
     opacity: 0.9;
     margin: 10px;
@@ -119,7 +120,7 @@ footer {
 
 // 利用規約とプライバシーポリシー
 
-.terms_and_privacy_policy {
+.white_frame {
   margin: 30px 80px 50px 80px;
   padding: 0 30px 16px 30px;
   border-width: 3px;
@@ -130,6 +131,26 @@ footer {
   }
 }
 
+
+// お問い合わせ
+
+.container_inquiry {
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.3rem;
+}
+
+.twitter {
+  background-color: #00acee;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.twitter_btn {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 
 
 // ここからスマホ　U^ェ^U
@@ -152,7 +173,7 @@ footer {
   }
   
   // 利用規約とプライバシーポリシーのサイズ調整
-  .terms_and_privacy_policy {
+  .white_frame {
     margin: 10px;
     padding: 0 5px 5px 10px;
   }
