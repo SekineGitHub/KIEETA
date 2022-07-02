@@ -1,7 +1,14 @@
 <% provide(:title, "お問い合わせ") %>
-<h1>お問い合わせ</h1>
-<p>
-  This is the home page for the
-  <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
-  KIEETA.
-</p>
+
+<%= render 'shared/header02' %>
+
+<div class="container_inquiry white_frame">
+    <h1>お問い合わせ</h1>
+    <p>KIEETA（キエータ）をご利用頂きありがとうございます。</p>
+    <p>本サービス内において、ご意見, ご要望, バグ報告等ございましたら下記TwitterアカウントのDMにてご報告頂けると助かります。</p>
+  <div class="twitter_btn">
+    <%= link_to "@testtest", "https://twitter.com/10whatdoyoumean", target: :_blank, rel: "noopener noreferrer", class: "twitter link_to" %>
+  </div>
+</div>
+
+
