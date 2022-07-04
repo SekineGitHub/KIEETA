@@ -4,8 +4,9 @@
 
 
 @font-face {
-  font-family: 'kaisotai';
-  src: url('../fonts/kaiso_after.woff') format('woff');
+  font-family: 'fox';
+  src: asset-url('JFshinonomedot14.woff2') format('woff2'),
+       asset-url('JFshinonomedot14.woff') format('woff');
 }
 
 body {
@@ -22,6 +23,10 @@ body {
   text-decoration: none;
 }
 
+.font {
+  font-family: 'fox';
+}
+
 
 
 
@@ -32,18 +37,18 @@ body {
   margin-right: 30px;
 }
 
-.orrange_btn {
-  color: #FF7F27;
-  padding: 3px 8px 3px 4px;
-  border-width: 2px;
-  border-style: solid;
-  font-family: "kaisotai";
-  font-size: 35px;
-  letter-spacing : -4px;
-  &:hover {
-    color: #FFFF00;
-  }
-}
+// .orrange_btn {
+//   color: #FF7F27;
+//   padding: 3px 8px 3px 4px;
+//   border-width: 2px;
+//   border-style: solid;
+//   font-family: "kaisotai";
+//   font-size: 35px;
+//   letter-spacing : -4px;
+//   &:hover {
+//     color: #FFFF00;
+//   }
+// }
 
 
 
@@ -67,6 +72,7 @@ body {
 // ロゴとEnter
 
 .top {
+  font-size: 23px;
   text-align:  center;
   margin: 240px 0 222px 0;
   h1 {
@@ -78,9 +84,7 @@ body {
 }
 
 .top_enter {
-  font-family: monospace;
   color: white;
-  font-size: 36px;
 }
 
 
@@ -122,7 +126,7 @@ footer {
 .white_frame {
   margin: 30px 80px 50px 80px;
   padding: 0 30px 16px 30px;
-  border-width: 3px;
+  border-width: 5px;
   border-style: solid;
   .title {
     font-weight: bold;
@@ -178,5 +182,10 @@ footer {
   .white_frame {
     margin: 10px;
     padding: 0 5px 5px 10px;
+  }
+  
+  // twitterボタンの透明度
+  .twitter_btn {
+    opacity: 1;
   }
 }
