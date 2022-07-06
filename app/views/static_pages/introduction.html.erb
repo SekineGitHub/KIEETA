@@ -1,6 +1,26 @@
-<p>テスト</p>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $("p").text("成功！！");
-  });
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'shared/shim' %>
+  </head>
+  <body>
+    <main class="introduction">
+      <%= image_tag "undertale_test.jpg", alt: "KIEETA character", width: "800px" %>
+      <div class="dialogue_frame">
+        <p id="a">＊ いろはにほへと ちりぬるを わかよたれそ つねならむ</p>
+        <div class="second">
+          <p id="b">わかよたれそ つねならむ</p>
+        </div>
+      </div>
+      <div class="next">
+        <p class="next2">next</p>
+      </div>
+    </main>
+  </body>
+</html>

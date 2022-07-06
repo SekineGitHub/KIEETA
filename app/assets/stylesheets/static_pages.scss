@@ -37,19 +37,6 @@ body {
   margin-right: 30px;
 }
 
-// .orrange_btn {
-//   color: #FF7F27;
-//   padding: 3px 8px 3px 4px;
-//   border-width: 2px;
-//   border-style: solid;
-//   font-family: "kaisotai";
-//   font-size: 35px;
-//   letter-spacing : -4px;
-//   &:hover {
-//     color: #FFFF00;
-//   }
-// }
-
 
 
 
@@ -157,6 +144,37 @@ footer {
     opacity: 1;
   }
 }
+
+
+.introduction {
+  text-align: center;
+  p {
+    font-family: "fox";
+    font-size: 30px;
+  }
+  .second {
+    margin-left: 45px;
+  }
+  .dialogue_frame {
+    border-width: 5px;
+    border-style: solid;
+    margin: 10px 140px 0 140px;
+    padding: 0 0 100px 30px;
+    text-align: left;
+  }
+  .next {
+    text-align: right;
+    margin: 5px 140px 0 0;
+    p {
+      margin-top: 0;
+      font-size: 40px;
+    }
+    &:hover {
+      color: #FFFF00;
+    }
+  }
+}
+
 
 
 // ここからスマホ　U^ェ^U
