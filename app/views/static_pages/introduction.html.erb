@@ -10,8 +10,8 @@
     <%= render 'shared/shim' %>
   </head>
   <body>
-    <main class="introduction">
-      <%= image_tag "undertale_test.jpg", alt: "KIEETA character", width: "800px" %>
+    <main class="introduction font">
+      <%= image_tag "undertale_test.jpg", alt: "KIEETA character", width: "800px", class: "character" %>
       <div class="dialogue_frame">
         <p id="a">＊ いろはにほへと ちりぬるを わかよたれそ つねならむ</p>
         <div class="second">
@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="next">
-        <p class="next2">next</p>
+        <a class="next2">next</a>
       </div>
     </main>
   </body>

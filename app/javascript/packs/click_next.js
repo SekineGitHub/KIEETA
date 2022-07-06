@@ -12,9 +12,9 @@ $(".next2").click(function(){
     document.getElementById('a').textContent = '＊ 有為の奥山 今日越えて'
     document.getElementById('b').textContent = '浅き夢見じ 酔ひもせず'
   }　else if(click == 3){
-    $(this).attr("href", "https://ad52109e8743481c8d87d6c688f64aa1.vfs.cloud9.ap-northeast-1.amazonaws.com/")
+    $(this).attr("href", "/")
   }else{
-    alert(`${num}回目のclick`);
+    alert(`${num}回目のclick_バグ発生`);
   }
 })
 })
