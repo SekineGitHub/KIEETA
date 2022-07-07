@@ -31,7 +31,7 @@ body {
 
 
 
-// ヘッダー（指名手配ボタン）
+// ヘッダー01（指名手配ボタン）
 
 .container_header01 {
   text-align: right;
@@ -41,7 +41,7 @@ body {
 
 
 
-//ヘッダー（KIEETAロゴあり）
+//ヘッダー02（KIEETAロゴあり）
 
 .container_header02 {
   text-align: left;
@@ -57,17 +57,20 @@ body {
 
 
 
-// ロゴとEnter
+// タイトルロゴとEnter
 
 .top {
   font-size: 23px;
   text-align:  center;
-  margin: 240px 0 250px 0;
+  margin: 220px 0;
   h1 {
     transition: .3s;
     &:hover {
       transform: translateY(-4px);
     }
+  }
+  a:hover {
+    color: #FFFF00;
   }
 }
 
@@ -146,12 +149,20 @@ footer {
 .introduction {
   text-align: center;  //画像を中央に
   font-size: 30px;
+  .container_introduction{
+    margin-top: auto;
+    margin-bottom: 25px;
+  }
   .dialogue_frame {
     border-width: 5px;
     border-style: solid;
     margin: 10px 140px 0 140px;
     padding: 0 0 100px 30px;
     text-align: left;
+    #a {
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+    }
   }
   .second {
     margin-left: 45px;
@@ -168,9 +179,9 @@ footer {
 
 
 
-// ここからスマホ　U^ェ^U
+// ここからスマホとタブレット　U^ェ^U
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 912px) {
   
   //KIEETAのロゴ画像
   .logo_s {
@@ -200,5 +211,24 @@ footer {
   }
   
   // introductionのサイズ調整
-  
+  .introduction {
+    .dialogue_frame {
+      margin-right: 0;
+      margin-left: 0;
+      padding: 0;
+      height: 300px;
+    }
+    .next {
+      margin-right: 0;
+    }
+  }
+}
+
+
+//ちっちゃいスマホ（iPhone SEとか。。。）
+
+@media screen and (max-width: 375px) {
+  .character {
+    width: 250px;
+  }
 }
