@@ -12,5 +12,6 @@ class StaticPagesController < ApplicationController
   end
   
   def introduction
+    render layout: false
   end
 end

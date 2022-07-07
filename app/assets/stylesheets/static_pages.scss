@@ -4,8 +4,9 @@
 
 
 @font-face {
-  font-family: 'kaisotai';
-  src: url('../fonts/kaiso_after.woff') format('woff');
+  font-family: 'fox';
+  src: asset-url('JFshinonomedot14.woff2') format('woff2'),
+       asset-url('JFshinonomedot14.woff') format('woff');
 }
 
 body {
@@ -20,35 +21,27 @@ body {
 
 .link_to {
   text-decoration: none;
+  color: white;
+}
+
+.font {
+  font-family: 'fox';
 }
 
 
 
 
-// ヘッダー（指名手配ボタン）
+// ヘッダー01（指名手配ボタン）
 
 .container_header01 {
   text-align: right;
   margin-right: 30px;
 }
 
-.orrange_btn {
-  color: #FF7F27;
-  padding: 3px 8px 3px 4px;
-  border-width: 2px;
-  border-style: solid;
-  font-family: "kaisotai";
-  font-size: 35px;
-  letter-spacing : -4px;
-  &:hover {
-    color: #FFFF00;
-  }
-}
 
 
 
-
-//ヘッダー（KIEETAロゴあり）
+//ヘッダー02（KIEETAロゴあり）
 
 .container_header02 {
   text-align: left;
@@ -64,23 +57,21 @@ body {
 
 
 
-// ロゴとEnter
+// タイトルロゴとEnter
 
 .top {
+  font-size: 23px;
   text-align:  center;
-  margin: 240px 0 222px 0;
+  margin: 220px 0;
   h1 {
     transition: .3s;
     &:hover {
       transform: translateY(-4px);
     }
   }
-}
-
-.top_enter {
-  font-family: monospace;
-  color: white;
-  font-size: 36px;
+  a:hover {
+    color: #FFFF00;
+  }
 }
 
 
@@ -101,18 +92,17 @@ footer {
   margin-top: auto;
   height: 60px;
   width: 100%;
+  nav {
+    padding: 23px 0;
+  }
   .footer01 {
     color: #878787;
     opacity: 0.9;
     margin: 10px;
-    font-family: monospace;
     font-size: 16px;
     &:hover {
-    color:white;
+    color: white;
     }
-  }
-  nav {
-    padding: 20px 0;
   }
 }
 
@@ -122,7 +112,7 @@ footer {
 .white_frame {
   margin: 30px 80px 50px 80px;
   padding: 0 30px 16px 30px;
-  border-width: 3px;
+  border-width: 5px;
   border-style: solid;
   .title {
     font-weight: bold;
@@ -135,13 +125,11 @@ footer {
 
 .container_inquiry {
   text-align: center;
-  font-family: monospace;
   font-size: 1.3rem;
 }
 
 .twitter {
   background-color: #00acee;
-  color: white;
   padding: 8px 20px;
   border-radius: 8px;
 }
@@ -155,9 +143,45 @@ footer {
 }
 
 
-// ここからスマホ　U^ェ^U
 
-@media screen and (max-width: 540px) {
+//introductionのページ
+
+.introduction {
+  text-align: center;  //画像を中央に
+  font-size: 30px;
+  .container_introduction{
+    margin-top: auto;
+    margin-bottom: 25px;
+  }
+  .dialogue_frame {
+    border-width: 5px;
+    border-style: solid;
+    margin: 10px 140px 0 140px;
+    padding: 0 0 100px 30px;
+    text-align: left;
+    #a {
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+    }
+  }
+  .second {
+    margin-left: 45px;
+  }
+  .next {
+    text-align: right;
+    font-size: 42px;
+    margin: 5px 135px 0 0;
+    &:hover {
+      color: #FFFF00;
+    }
+  }
+}
+
+
+
+// ここからスマホとタブレット　U^ェ^U
+
+@media screen and (max-width: 912px) {
   
   //KIEETAのロゴ画像
   .logo_s {
@@ -167,6 +191,7 @@ footer {
   // ロゴとヘッダーの距離調整
   .top {
     margin-top: 195px;
+    font-size: 1rem;
   }
   
   // フッターの文字を小さくした
@@ -178,5 +203,32 @@ footer {
   .white_frame {
     margin: 10px;
     padding: 0 5px 5px 10px;
+  }
+  
+  // twitterボタンの透明度
+  .twitter_btn {
+    opacity: 1;
+  }
+  
+  // introductionのサイズ調整
+  .introduction {
+    .dialogue_frame {
+      margin-right: 0;
+      margin-left: 0;
+      padding: 0;
+      height: 300px;
+    }
+    .next {
+      margin-right: 0;
+    }
+  }
+}
+
+
+//ちっちゃいスマホ（iPhone SEとか。。。）
+
+@media screen and (max-width: 375px) {
+  .character {
+    width: 250px;
   }
 }
