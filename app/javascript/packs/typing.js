@@ -57,7 +57,4 @@ $(document).on('turbolinks:load', function(){
 
 
 
-
-
-
 export{typing};
