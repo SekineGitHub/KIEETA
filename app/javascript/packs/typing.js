@@ -1,11 +1,10 @@
 /* global $ */
 
-
 function typing() {
     /* ----- option ----- */
     let id = ['a','b']; //指定するidを全て配列で渡す
     let txSp = 40; // テキストの表示速度
-    let dly = 1000; // 次の文章までの待ち時間
+    let dly = 500; // 次の文章までの待ち時間
     /* ----- option ----- */
     let count = 0;
     let tx = [];
@@ -46,18 +45,11 @@ function typing() {
 }
 
 
-
-
 $(document).on('turbolinks:load', function(){
     if(document.URL.match(/introduction/)){
     typing()
     }
 })
-
-
-
-
-
 
 
 export{typing};

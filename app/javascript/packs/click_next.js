@@ -17,8 +17,6 @@ $(".next2").click(function(){
     typing();
   }　else if(click == 3){
     $(this).attr("href", "/")
-  }else{
-    alert(`${num}回目のclick_バグ発生`);
   }
 })
 })

@@ -36,6 +36,10 @@ body {
 .container_header01 {
   text-align: right;
   margin-right: 30px;
+  img {
+    width: 230px;
+    height: 56.87px;
+  }
 }
 
 
@@ -63,6 +67,10 @@ body {
   font-size: 23px;
   text-align:  center;
   margin: 220px 0;
+  img {
+    width: 700px;
+    height: 147.42px;
+  }
   h1 {
     transition: .3s;
     &:hover {
@@ -184,9 +192,15 @@ footer {
 
 @media screen and (max-width: 912px) {
   
+  //指名手配犯ボタンを右に寄せる
+  .container_header01 {
+    margin-right: 0;
+  }
+  
   //KIEETAのロゴ画像
   .logo_s {
     width: 300px;
+    height: 63.18px;
   }
   
   // ロゴとヘッダーの距離調整
