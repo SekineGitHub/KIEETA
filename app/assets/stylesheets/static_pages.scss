@@ -197,16 +197,20 @@ footer {
     margin-right: 0;
   }
   
-  //KIEETAのロゴ画像
-  .logo_s {
-    width: 300px;
-    height: 63.18px;
-  }
+  // //KIEETAのロゴ画像
+  // .logo_s {
+  //   width: 300px;
+  //   height: 63.18px;
+  // }
   
   // ロゴとヘッダーの距離調整
   .top {
     margin-top: 195px;
     font-size: 1rem;
+    img {
+      width: 300px;
+      height: 63.18px;
+    }
   }
   
   // フッターの文字を小さくした
