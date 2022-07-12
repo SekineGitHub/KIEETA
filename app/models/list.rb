@@ -1,4 +1,5 @@
 class List < ApplicationRecord
+  has_one_attached :images_attributes
   validates :name, presence: true
   validates :age, presence: true
   validates :height, presence: true
