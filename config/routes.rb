@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get  '/privacy_policy',    to: 'static_pages#privacy_policy'
   get  '/inquiry',    to: 'static_pages#inquiry'
   get  '/introduction',    to: 'static_pages#introduction'
+  resources :lists
 end
