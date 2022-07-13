@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_13_064430) do
+ActiveRecord::Schema.define(version: 2022_07_13_075254) do
 
   create_table "lists", force: :cascade do |t|
     t.string "name"
@@ -25,4 +25,13 @@ ActiveRecord::Schema.define(version: 2022_07_13_064430) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "photos", force: :cascade do |t|
+    t.text "image"
+    t.integer "list_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["list_id"], name: "index_photos_on_list_id"
+  end
+
+  add_foreign_key "photos", "lists"
 end
