@@ -6,6 +6,7 @@ class ListsController < ApplicationController
   
   def show
     @list = List.find(params[:id])
+    @photos = @list.photos
   end
   
 end

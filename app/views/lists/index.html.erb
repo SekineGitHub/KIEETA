@@ -2,9 +2,5 @@
 <h1>指名手配犯一覧</h1>
 
 <ul class="lists">
-  <% @lists.each do |list| %>
-    <li>
-      <%= link_to list.name, list %>
-    </li>
-  <% end %>
+    <%= render @lists %>
 </ul>
