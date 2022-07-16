@@ -1,6 +1,11 @@
 require 'test_helper'
 
 class ListTest < ActiveSupport::TestCase
+<<<<<<< HEAD
+  # test "the truth" do
+  #   assert true
+  # end
+=======
   
   def setup
     @list = List.new(name: "小暮洋史（こぐれ ひろし）", 
@@ -51,4 +56,5 @@ class ListTest < ActiveSupport::TestCase
     assert_not @list.valid?
   end
 
+>>>>>>> 0aa71af5bacccad8f3669bd46d0ca2c972e6470c
 end

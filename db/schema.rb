@@ -10,6 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 2022_07_13_075254) do
+
+=======
 ActiveRecord::Schema.define(version: 2022_07_12_035900) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
@@ -33,6 +37,7 @@ ActiveRecord::Schema.define(version: 2022_07_12_035900) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+>>>>>>> 0aa71af5bacccad8f3669bd46d0ca2c972e6470c
   create_table "lists", force: :cascade do |t|
     t.string "name"
     t.string "age"
@@ -41,10 +46,27 @@ ActiveRecord::Schema.define(version: 2022_07_12_035900) do
     t.string "bounty"
     t.text "story"
     t.string "report"
+<<<<<<< HEAD
+    t.text "images_attributes"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "photos", force: :cascade do |t|
+    t.text "image"
+    t.integer "list_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["list_id"], name: "index_photos_on_list_id"
+  end
+
+  add_foreign_key "photos", "lists"
+=======
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "images_attributes"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+>>>>>>> 0aa71af5bacccad8f3669bd46d0ca2c972e6470c
 end
