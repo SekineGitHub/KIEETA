@@ -1,6 +1,19 @@
 <% provide(:title, '指名手配犯一覧') %>
+<<<<<<< HEAD
 <h1>指名手配犯一覧</h1>
 
 <ul class="lists">
     <%= render @lists %>
+=======
+<%= render 'shared/header02' %>
+<h1>指名手配犯一覧</h1>
+
+<ul class="lists">
+  <% @lists.each do |list| %>
+    <li>
+      <%= image_tag list.images_attributes if list.images_attributes.attached? %>
+      <%= link_to list.name, list %>
+    </li>
+  <% end %>
+>>>>>>> 0aa71af5bacccad8f3669bd46d0ca2c972e6470c
 </ul>
