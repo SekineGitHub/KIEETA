@@ -1,3 +1,23 @@
-// Place all the styles related to the Lists controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.show-contents {
+  display: flex;
+  justify-content: space-between;
+  .show_container {
+    width: 50%; 
+    font-size: 30px;
+    margin: 10px 300px 40px 50px;
+    // padding: 10px 50px 40px 10px;
+    #story {
+      line-height: 1.3;
+    }
+  }
+}
+
+aside {
+  width: 50%;
+  li {
+    list-style: none;
+  }
+  .report {
+    width: 300px;
+  }
+}
