@@ -127,7 +127,7 @@ Photo.create!(
     # 小暮洋史（こぐれ ひろし）
     { 
       list_id: 1,
-      image: "https://lh3.googleusercontent.com/pw/AM-JKLVuS2nEkSWhC0s4YrBhwj-QUCUiAPanZX1tzTqBnYi7tTjgVf1sjlFys_np_vJUrKWxLE6PtWGReNfxrVoEoUlDJht05aQPDC5rnJww64tbqAWCrMVDFL6cI6DR_STl0wsTz0XJd7S3q2reWQgt3Aw=w149-h224-no?authuser=0"
+      image: "https://lh3.googleusercontent.com/pw/AM-JKLXw6toNhfUVXCZN8XPDMjv4pi_KMFg-VNJvIYGXBDCwH1M_u1LQrfpOKFs_PHvU04Ci4BGxf8K2RGnBDz0jut2UQDTqAuq_5JZi1mJ0pgdG21UwvDKtYzRYNSJfzm5JCIKILADuaihats9ysbabpcgw=w145-h221-no?authuser=0"
     },
     {
       list_id: 1,
@@ -241,7 +241,7 @@ Photo.create!(
     # 宮内雄大（みやうち ゆうだい）
     {
       list_id: 7,
-      image: "https://lh3.googleusercontent.com/pw/AM-JKLU0Dl1AipYeEzj9dbBd6dDJrVEF4CjLHdkKWsIswHBSxWH0er9ikV5A40XhW9SDUGVlZYgMa2KzYm6HWf7Tv8G67vhY7IA2gzZk7q4KfRTdSyuGEIWdlu_ShNKsFwfIA6WUpdtzi2k3wbwQkEQqLrUI=w200-h240-no?authuser=0"
+      image: "https://lh3.googleusercontent.com/pw/AM-JKLXVZKzD63kLCWq4Q-uGsC5f4TSE9dkb3qMUvPabCexm3RtbUm507H4rUdtxLAxf9V1JZoKjNNuUxF0i0z5LT0K09BkoZntMmyUCaGtS8soZH4qvt5CqIYb7ujEh02xs5JGcjPPJlVXepftFwOmej6Hs=w193-h240-no?authuser=0"
     },
     {
       list_id: 7,
@@ -299,7 +299,7 @@ Photo.create!(
     # 越智 清（おち きよし）
     {
       list_id: 9,
-      image: "https://lh3.googleusercontent.com/pw/AM-JKLXNK2gHSyLRGiQDu552dy3ee-eBdkTlMhrHhPDfyjtqzZLHpJElny1DBC0BgaIOlr3fbrwPCnt5gv9ZVMUpD4cWK9gxuqTiweIi2ecRMTc2AX7kHx6KgfJDkzm5tVddpxJw7NBUKh00OOG6pKVBFcVz=w200-h240-no?authuser=0"
+      image: "https://lh3.googleusercontent.com/pw/AM-JKLXJa_0TmyCACFRrJlLbC6AepodRyHjcey9-RiO4JOGU9nDwlMxFrN1FNqqjQBqkR8nyQRo1z3gWFIdoRJPcZmAJZZGwQLzPnEPFRvDh-jFQ7gTYzKaA6HCwEpBYpbBbs2RRU9-exZhxEj_QGcg_4TYa=w174-h229-no?authuser=0"
     },
     {
       list_id: 9,
