@@ -1,10 +1,11 @@
+// show/:idのページ
+
 .show-contents {
   display: flex;
-  justify-content: space-between;
   .show_container {
     width: 50%; 
     font-size: 30px;
-    margin: 10px 300px 40px 50px;
+    margin: 10px 30px 40px 50px;
     #story {
       line-height: 1.3;
     }
@@ -13,15 +14,37 @@
 
 aside {
   width: 50%;
+  .swiper {
+    text-align: center;
+  }
   li {
     list-style: none;
+    .photo1 {
+      height: 400px;
+    }
   }
-  .report {
-    width: 300px;
+  .report_btn {
+    text-align: center;
+    margin-top: 10px;
+    .report {
+      width: 300px;
+    }
   }
-  .return {
-    width: 250px;
+  .return_btn {
+    text-align: right;
+    margin-top: 158px;
+    margin-right: 10px;
+    .return {
+      width: 200px;
+    }
   }
+}
+
+
+// /listsのページ
+
+a {
+  text-decoration: none;
 }
 
 .list_container {
@@ -29,34 +52,24 @@ aside {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px
+  gap: 10px;
+  .list_item {
+    text-align: center;
+    .list_image {
+    max-width: 50%;
+    }
+    .list_text {
+      font-size: 20px;
+      margin: 10px 0 40px 0;
+    }
+  }
 }
 
-.photo1 {
-  width: 250px;
-}
 
-.list_image {
-  // height: 300px;
-  max-width:50%
-  // height: auto;
-}
-
-.list_item {
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-}
-
-.list_text {
-  font-size: 20px;
-  margin: 10px 0 40px 0;
-}
-
+// ここからタブレット
 
 @media screen and (max-width: 1213px){
+  
   .show-contents {
     display: block;
     .show_container {
@@ -64,22 +77,51 @@ a {
       width: 100%;
     }
   }
+  
   aside {
     width: 100%;
+    .return_btn {
+      margin-top: 60px;
+    }
   }
+  
   .list_container {
     grid-template-columns: 1fr 1fr;
   }
   
 }
 
+
+// ここからスマホ
+
 @media screen and (max-width: 606px){
+  // .photo1 {
+  //   width: 330px;
+  // }
   .show-contents {
     .show_container{ 
       font-size: 21px;
     }
   }
+  
   .list_container {
     grid-template-columns: 1fr;
+  }
+  
+  aside {
+    li {
+      .photo1 {
+        width: 330px;
+      }
+    }
+    .aside-container {
+      text-align: center;
+      .report {
+        width: 250px;
+      }
+      .return {
+        width: 180px;
+      }
+    }
   }
 }

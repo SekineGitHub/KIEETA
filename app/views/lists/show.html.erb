@@ -2,7 +2,7 @@
 <%= render 'shared/header02' %>
 <div class="show-contents">
   <main class="font show_container">
-    <p id="aaa">名前：<%= @list.name %></p>
+    <p>名前：<%= @list.name %></p>
     <p>年齢：<%= @list.age %></p>
     <p>身長：<%= @list.height %></p>
     <p>罪状：<%= @list.guilty %></p>
@@ -11,20 +11,22 @@
   </main>
   
   <aside>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <%= render @photos %>
+    <div class="aside-container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <%= render @photos %>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
       </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-scrollbar"></div>
-    </div>
-    <div class="report_btn">
-      <%= link_to image_tag("report.png", onmouseover: "this.src='#{asset_path('report_on.png')}'", onmouseout: "this.src='#{asset_path('report.png')}'", class: "report" ), @list.report, target: :_blank, rel: "noopener noreferrer" %>
-    </div>
-    <div class="return_btn">
-      <%= link_to image_tag("return.png", onmouseover: "this.src='#{asset_path('return_on.png')}'", onmouseout: "this.src='#{asset_path('return.png')}'", class: "return" ), lists_path %>
+      <div class="report_btn">
+        <%= link_to image_tag("report.png", onmouseover: "this.src='#{asset_path('report_on.png')}'", onmouseout: "this.src='#{asset_path('report.png')}'", class: "report" ), @list.report, target: :_blank, rel: "noopener noreferrer" %>
+      </div>
+      <div class="return_btn">
+        <%= link_to image_tag("return.png", onmouseover: "this.src='#{asset_path('return_on.png')}'", onmouseout: "this.src='#{asset_path('return.png')}'", class: "return" ), lists_path %>
+      </div>
     </div>
   </aside>
   
