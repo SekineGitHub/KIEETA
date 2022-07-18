@@ -1,3 +1,4 @@
+document.addEventListener("turbolinks:load", function(){
 const mySwiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
@@ -17,4 +18,5 @@ const mySwiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+});
 });
