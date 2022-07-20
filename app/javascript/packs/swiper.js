@@ -1,7 +1,6 @@
-
-
-const swiper = new Swiper(".swiper", {
-     // Optional parameters
+document.addEventListener("turbolinks:load", function(){
+const mySwiper = new Swiper('.swiper', {
+  // Optional parameters
   loop: true,
  
   // If we need pagination
@@ -18,5 +17,6 @@ const swiper = new Swiper(".swiper", {
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
-  }
+  },
+});
 });

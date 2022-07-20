@@ -10,8 +10,7 @@ require("channels")
 require("jquery")
 require("./typing")
 require("./click_next")
-require("./swiper-bundle.min")
-require("./slide")
+require("./swiper")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

@@ -20,4 +20,3 @@ $(".next2").click(function(){
   }
 })
 })
-

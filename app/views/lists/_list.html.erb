@@ -1,4 +1,6 @@
-<li>
-  <%= image_tag list.photos.first.image %>
-  <%= link_to list.name, list %>
+<li class="list_item">
+  <%= link_to list do %>
+  <%= image_tag list.photos.first.image, class: "list_image" %>
+  <p class="font link_to list_text"><%= list.name %></p>
+  <% end %>
 </li>
