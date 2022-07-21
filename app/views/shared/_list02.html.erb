@@ -1,0 +1,14 @@
+<div class="aside-container">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <%= render @photos %>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-scrollbar"></div>
+  </div>
+  <div class="report_btn">
+    <%= link_to image_tag("report.png", onmouseover: "this.src='#{asset_path('report_on.png')}'", onmouseout: "this.src='#{asset_path('report.png')}'", class: "report" ), @list.report, target: :_blank, rel: "noopener noreferrer" %>
+  </div>
+</div>
