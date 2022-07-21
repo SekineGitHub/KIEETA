@@ -1,3 +1,32 @@
-// Place all the styles related to the Results controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// footer（シェアと指名手配半一覧）
+.rst_footer {
+    background-color: black;
+}
+
+.rst_container {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.rst_twitter {
+    background-color: #00acee;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.rst_twitter_btn {
+    margin: 10px 0 0 50px;
+    opacity: 0.9;
+    &:hover {
+    opacity: 1;
+    }
+}
+
+.rst_text {
+    margin-bottom: 0;
+}
+

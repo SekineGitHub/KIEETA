@@ -67,6 +67,17 @@ a {
   }
 }
 
+// Swiperの矢印とページネーションを白く
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: white;
+}
+
+.swiper-pagination-bullet{
+  background: white!important;
+}
+
 
 // ここからタブレット
 

@@ -1,0 +1,14 @@
+<footer class="rst_footer">
+  <ul class="rst_container ">
+    <li class="rst_twitter_btn font">
+      <%= link_to "https://twitter.com/10whatdoyoumean", target: :_blank, rel: "noopener noreferrer", class: "rst_twitter link_to" do %>
+        <span class="fa fa-twitter"></span>
+        <span>ツイートする</span>
+      <% end %>
+    </li>
+    
+    <li class="container_header01">
+      <%= link_to image_tag("shimeitehai.png", onmouseover: "this.src='#{asset_path('simeitehai_on.png')}'", onmouseout: "this.src='#{asset_path('shimeitehai.png')}'" ), lists_path %>
+    </li>
+  </ul>
+</footer>
