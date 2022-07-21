@@ -1,4 +1,14 @@
 // footer（シェアと指名手配半一覧）
+.rst_wanted {
+  text-align: right;
+  margin-right: 30px;
+  img {
+    width: 230px;
+  }
+}
+
+
+
 .rst_footer {
     background-color: black;
 }
@@ -30,3 +40,25 @@
     margin-bottom: 0;
 }
 
+
+
+
+@media screen and (max-width: 474px){
+    .rst_container {
+        display: block;
+    }
+    
+    .rst_wanted {
+        text-align: center;
+        margin-right: 0;
+        margin-top: 20px;
+        img {
+            width: 180px;
+        }
+    }
+    
+    .rst_twitter_btn {
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+}
