@@ -10,8 +10,9 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: black;    
+  color: white;              
+  font-family: 'fox';
   #wrapper {
     display: flex;
     flex-direction: column;
@@ -23,11 +24,6 @@ body {
   text-decoration: none;
   color: white;
 }
-
-.font {
-  font-family: 'fox';
-}
-
 
 
 
@@ -122,6 +118,7 @@ footer {
   padding: 0 30px 16px 30px;
   border-width: 5px;
   border-style: solid;
+  font-family: sans-serif;
   .title {
     font-weight: bold;
     font-size: 1.2rem;
@@ -134,6 +131,7 @@ footer {
 .container_inquiry {
   text-align: center;
   font-size: 1.3rem;
+  font-family: 'fox';
 }
 
 .twitter {

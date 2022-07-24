@@ -16,7 +16,7 @@ $(".next2").click(function(){
     document.getElementById('b').textContent = '浅き夢見じ 酔ひもせず'
     typing();
   }　else if(click == 3){
-    $(this).attr("href", "/")
+    $(this).attr("href", "/diagnose")
   }
 })
 })
