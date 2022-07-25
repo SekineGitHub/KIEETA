@@ -10,8 +10,5 @@ class StaticPagesController < ApplicationController
   
   def inquiry
   end
-  
-  def introduction
-    render layout: false
-  end
+
 end

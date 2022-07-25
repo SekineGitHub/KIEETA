@@ -1,0 +1,163 @@
+.stage {
+  margin: 50px auto;
+  width: 1200px;
+  height: 700px;
+  overflow: hidden;
+}
+
+#cards {
+  width: 1200px;
+  height: 4900px;
+  background-color: black;
+  transition: 0.8s;
+  overflow: hidden;
+}
+
+.card {
+  width: 1190px;
+  height: 590px;
+  margin: 50px auto;
+  background: black;
+  border: 5px solid #fff;
+}
+
+.card + .card {
+  margin-top: 700px;
+}
+
+#cards.move1 {
+  transform: translate(0, -1300px);
+}
+#cards.move2 {
+  transform: translate(0, -2600px);
+}
+#cards.move3 {
+  transform: translate(0, -3900px);
+}
+
+.choice_container {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-size: 60px;
+}
+
+.choice {
+  margin: 30px;
+  &:hover {
+    color: #FFFF00;
+  }
+}
+
+.serif_container {
+  text-align: center;
+  margin-top: 180px;
+  h1 {
+    font-size: 60px;
+  }
+}
+
+
+//ここからタブレット
+
+@media screen and (max-width: 912px) {
+  .stage {
+    margin: 0 auto;
+    width: 650px;
+    height: 1340px;
+    overflow: hidden;
+  }
+  
+  #cards {
+    width: 650px;
+    height: 9380px;
+    background: black;
+    transition: 0.8s;
+    overflow: hidden;
+  }
+  
+  .card {
+    width: 640px;
+    height: 490px;
+    background: black;
+    margin: 420px auto;
+    border: 5px solid #fff;
+  }
+  
+  .card + .card {
+    margin-top: 1340px;
+  }
+  
+  #cards.move1 {
+    transform: translate(0, -1840px);
+  }
+  #cards.move2 {
+    transform: translate(0, -3680px);
+  }
+  #cards.move3 {
+    transform: translate(0, -5520px);
+  }
+}
+
+
+//ここからスマホ
+
+@media screen and (max-width: 540px) {
+  
+  
+  .stage {
+    margin: 0 auto;
+    width: 330px;
+    height: 880px;
+    overflow: hidden;
+  }
+  
+  #cards {
+    width: 330px;
+    height: 6160px;
+    background: black;
+    transition: 0.8s;
+    overflow: hidden;
+  }
+  
+  .card {
+    width: 320px;
+    height: 300px;
+    background: black;
+    margin: 290px auto;
+    border: 5px solid #fff;
+  }
+  
+  .card + .card {
+    margin-top: 880px;
+  }
+  
+  #cards.move1 {
+    transform: translate(0, -1180px);
+  }
+  #cards.move2 {
+    transform: translate(0, -2360px);
+  }
+  #cards.move3 {
+    transform: translate(0, -3540px);
+  }
+  
+  .choice_container {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 40px;
+  }
+
+  .choice {
+    margin: 30px;
+  }
+
+  .serif_container {
+    text-align: center;
+    margin-top: 90px;
+    h1 {
+      font-size: 40px;
+    }
+  }
+}

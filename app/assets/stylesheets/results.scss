@@ -1,0 +1,83 @@
+// footer（シェアと指名手配半一覧）
+.rst_wanted {
+  text-align: right;
+  margin-right: 30px;
+  img {
+    width: 230px;
+  }
+}
+
+
+
+.rst_footer {
+    background-color: black;
+}
+
+.rst_container {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.rst_twitter {
+    background-color: #00acee;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.rst_twitter_btn {
+    margin: 10px 0 0 50px;
+    opacity: 0.9;
+    &:hover {
+    opacity: 1;
+    }
+}
+
+.rst_text {
+    margin-bottom: 0;
+}
+
+
+.fadeIn2{
+animation-name:fadeInAnime;
+animation-duration:3s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+// ここからスマホ
+
+@media screen and (max-width: 474px){
+    .rst_container {
+        display: block;
+    }
+    
+    .rst_wanted {
+        text-align: center;
+        margin-right: 0;
+        margin-top: 20px;
+        img {
+            width: 180px;
+        }
+    }
+    
+    .rst_twitter_btn {
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+}

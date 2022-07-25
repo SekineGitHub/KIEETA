@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="/javascript/swiper-bundle.min.js"></script>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'shared/shim' %>
+  </head>
+  <body>
+    <h1 id="c" class="rst_text">＊ 君はこの人物の情報を集めてくれ。</h1>
+    <div id="disp" style="display:none">
+      <div class="show-contents">
+        
+        <main class="show_container">
+          <%= render 'shared/list01' %>
+        </main>
+        
+        <aside>
+          <%= render 'shared/list02' %>
+        </aside>
+      </div>
+      <%= render 'shared/footer02' %>
+    </div>
+  </body>
+</html>
