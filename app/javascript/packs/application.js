@@ -14,6 +14,7 @@ require("./swiper")
 require("./twitter")
 require("./transform")
 require("./question")
+require("./display_none")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
