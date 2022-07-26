@@ -1,4 +1,4 @@
-document.addEventListener("turbolinks:load", function(){
+document.addEventListener("DOMContentLoaded", function(){
   if(document.URL.match(/results/)){
     const count = 1600;
     const disp1 ="document.getElementById('disp').style.display='block'"

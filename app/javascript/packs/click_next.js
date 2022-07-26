@@ -2,7 +2,7 @@
 
 import {typing1} from './typing.js';
 
-$(document).on('turbolinks:load', function() {
+$(function() {
   let num = 0;
 $(".next2").click(function(){
   $(this).data("click", ++num)

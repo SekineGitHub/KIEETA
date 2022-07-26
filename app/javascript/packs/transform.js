@@ -1,4 +1,4 @@
-document.addEventListener("turbolinks:load", function(){
+document.addEventListener("DOMContentLoaded", function(){
   const cards = document.getElementById('cards');
   const First = document.getElementsByClassName('First');
   const Second = document.getElementsByClassName('Second');
