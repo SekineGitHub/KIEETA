@@ -22,8 +22,8 @@ document.addEventListener("turbolinks:load", function(){
   　    '#KIEETA ' + '#キエータ\n'
   　  ) + 
   　  // '&url=https://mysterious-depths-28540.herokuapp.com/'      //本番環境
-  　  '&url=https://shinrabansho.com/'                              //開発環境の参考
-  　  // '&url=https://kieeta.com/'                                 //本番環境(独自ドメイン取得後)
+  　 // '&url=https://shinrabansho.com/'                              //開発環境の参考
+  　  '&url=https://kieeta.com/'                                 //本番環境(独自ドメイン取得後)
   　  ;
     tweet.href = tweetUrl;
     
