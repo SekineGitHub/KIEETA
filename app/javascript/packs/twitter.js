@@ -1,5 +1,5 @@
 
-document.addEventListener("turbolinks:load", function(){ 
+document.addEventListener("DOMContentLoaded", function(){ 
   
   const tweet = document.getElementById('tweet');
   
@@ -21,9 +21,7 @@ document.addEventListener("turbolinks:load", function(){
   　    bty + '\n' +
   　    '#KIEETA ' + '#キエータ\n'
   　  ) + 
-  　  // '&url=https://mysterious-depths-28540.herokuapp.com/'      //本番環境
-  　 // '&url=https://shinrabansho.com/'                              //開発環境の参考
-  　  '&url=https://kieeta.com/'                                 //本番環境(独自ドメイン取得後)
+  　  '&url=https://kieeta.com/'
   　  ;
     tweet.href = tweetUrl;
     

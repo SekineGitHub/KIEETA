@@ -92,13 +92,13 @@ function typing2() {
 }
 
 
-$(document).on('turbolinks:load', function(){
+$(function(){
     if(document.URL.match(/introduction/)){
     typing1()
     }
 })
 
-$(document).on('turbolinks:load', function(){
+$(function(){
     if(document.URL.match(/results/)){
     typing2()
     }

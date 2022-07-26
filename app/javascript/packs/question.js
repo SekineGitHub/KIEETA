@@ -1,4 +1,4 @@
-document.addEventListener("turbolinks:load", function(){
+document.addEventListener("DOMContentLoaded", function(){
   let answer = "";
   const q1_1 = document.getElementById('q1_1');
   const q1_2 = document.getElementById('q1_2');
