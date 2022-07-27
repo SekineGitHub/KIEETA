@@ -8,12 +8,12 @@ $(".next2").click(function(){
   $(this).data("click", ++num)
   let click = $(this).data("click");
   if(click == 1){
-    document.getElementById('a').textContent = '＊ 色は匂へど 散りぬるを 我が世誰そ 常ならむ'
-    document.getElementById('b').textContent = 'いろはにおへど ちりぬるを わがよたれそ つねならむ'
+    document.getElementById('a').textContent = '＊ この国には罪を犯しながらも、償わず、'
+    document.getElementById('b').textContent = '隠れて生活している人間がたくさんいることを知っているか。'
     typing1();
   } else if(click == 2){
-    document.getElementById('a').textContent = '＊ 有為の奥山 今日越えて'
-    document.getElementById('b').textContent = '浅き夢見じ 酔ひもせず'
+    document.getElementById('a').textContent = '＊ これから君に任務を与える。'
+    document.getElementById('b').textContent = 'まずは君のことを教えてくれ。'
     typing1();
   }　else if(click == 3){
     $(this).attr("href", "/diagnose")
