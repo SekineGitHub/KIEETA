@@ -256,11 +256,16 @@ footer {
   }
 }
 
+@media screen and (max-width: 420px) {
+  .character {
+    width: 380px;
+  }
+}
 
 //ちっちゃいスマホ（iPhone SEとか。。。）
 
 @media screen and (max-width: 375px) {
   .character {
-    width: 250px;
+    width: 350px;
   }
 }
