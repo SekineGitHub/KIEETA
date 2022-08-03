@@ -43,7 +43,7 @@ https://kieeta.com/
 ### バックエンド
 
 - Ruby 2.6.3
-- Rails 6.0.4
+- Rails 6.0.5.1
 - Rspec 3.11
 
 ### フロントエンド
@@ -54,7 +54,7 @@ https://kieeta.com/
 
 ### インフラストラクチャー
 
-- puma 4.3.6
+- puma 4.3.12
 - heroku
 
 ### 分析ツール
