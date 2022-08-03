@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= stylesheet_link_tag    'application', media: 'all', onload: "this.onload=null;this.rel='stylesheet'", rel: 'preload', as: 'style'  %>
     <script src="/javascript/swiper-bundle.min.js"></script>
     <%= javascript_pack_tag 'application' %>
     <%= render 'shared/shim' %>
