@@ -44,6 +44,7 @@ https://kieeta.com/
 
 - Ruby 2.6.3
 - Rails 6.0.4
+- Rspec 3.11
 
 ### フロントエンド
 
