@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(){
   　    bty + '\n' +
   　    '#KIEETA ' + '#キエータ\n'
   　  ) + 
-  　  '&url=https://kieeta.com/'
+  　  '&url=https://kieeta.com'
   　  ;
     tweet.href = tweetUrl;
     
