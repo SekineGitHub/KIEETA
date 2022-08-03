@@ -15,7 +15,7 @@ module ApplicationHelper
       # title: full_title(yield(:title)),
       charset: 'utf-8',
       description: '４つの質問であなたにピッタリの指名手配犯を。',
-      keywords: '指名手配犯,undertale,手配書,キエータ,KIEETA',
+      keywords: '指名手配犯,undertale,手配書',
       canonical: 'https://kieeta.com/',
       icon: [
         { href: image_url('favicon-16x16.png') },
