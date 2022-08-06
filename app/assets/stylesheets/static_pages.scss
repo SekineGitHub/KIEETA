@@ -7,6 +7,7 @@
   font-family: 'fox';
   src: asset-url('JFshinonomedot14.woff2') format('woff2'),
        asset-url('JFshinonomedot14.woff') format('woff');
+  font-display: swap;
 }
 
 body {
@@ -152,14 +153,8 @@ footer {
   font-family: 'fox';
 }
 
-.twitter {
-  background-color: #00acee;
-  padding: 8px 20px;
-  border-radius: 8px;
-}
-
 .twitter_btn {
-  margin: 30px 0 20px 0;
+  margin: 20px 0 5px 0;
   opacity: 0.9;
   &:hover {
     opacity: 1;
